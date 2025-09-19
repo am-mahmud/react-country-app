@@ -2,9 +2,9 @@ import React, { use } from 'react';
 
 const Countries = ({countriesPromise}) => {
 
-    const countries = use(countriesPromise);
-
-    console.log(countries);
+    const countriesData = use(countriesPromise);
+    const countries = countriesData.countries;
+    console.log(countries)
     
 
     return (
